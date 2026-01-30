@@ -1,6 +1,7 @@
 # OpenClaw-Moltbot-Clawdbot-Install-steps
 A quich guide for get you started for real
 
+![https___dev-to-uploads s3 amazonaws com_uploads_articles_1vcicqev4ids4xabxln7](https://github.com/user-attachments/assets/44d7e9d9-b028-4a22-a95b-e621fb1c0467)
 
 
 

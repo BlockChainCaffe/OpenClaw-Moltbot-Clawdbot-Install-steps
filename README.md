@@ -13,7 +13,15 @@ to `OpenClaw`. Things are moving fast...
 > In this guide the name `openclaw` will be used.
 
 ----
+## Installation options:
 
+Openclaw can be installed on serveral different hardware configurations. While this guide defines the generic installation procedure, some more specific guides can be
+found for specific hardware settings
+
+- [raspberry_pi.md](Raspberry Pi)
+
+
+----
 ## Before we install : Requirements
 
 ## Minimum Hardware Requirements

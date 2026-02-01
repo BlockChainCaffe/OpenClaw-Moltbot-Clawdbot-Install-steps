@@ -18,7 +18,7 @@ to `OpenClaw`. Things are moving fast...
 Openclaw can be installed on serveral different hardware configurations. While this guide defines the generic installation procedure, some more specific guides can be
 found for specific hardware settings
 
-- [raspberry_pi.md](Raspberry Pi)
+- [Raspberry Pi](raspberry_pi.md)
 
 
 ----

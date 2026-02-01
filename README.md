@@ -44,7 +44,7 @@ If you plan to run local models on OLLAma or locally store a lot of file the pre
 ### Software Requirements
 
 First lets add some packages that we'll need later on
-```
+``` bash
 apt-get install -y sudo git vim net-tools build-essential procps curl file
 ```
 
@@ -53,7 +53,7 @@ apt-get install -y sudo git vim net-tools build-essential procps curl file
 All the following procedure must be run by a **non-root user** that... can act as root 
 We'll create the user **bot** for that purpouse
 
-```
+``` bash
 ## Become root if not already
 sudo su -
 

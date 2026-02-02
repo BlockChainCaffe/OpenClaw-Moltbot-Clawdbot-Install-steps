@@ -72,7 +72,7 @@ bot ALL=(ALL) NOPASSWD: ALL
 
 Now save and become the **bot** user
 
-### Install homebrew (Linuxbrew))
+### Install homebrew (Linuxbrew)
 
 As the **bot** user:
 
@@ -150,7 +150,7 @@ Quick answers for a basic install
 - define a channel: pick `Telegram`
 	- when asked inser the Telegram Bot API key
 - preferred node package manager for skills: `npm`
-- pick the skills you like from the lost
+- pick the skills you like from the lost, example
 	- himalaya
 	- model-usage
 	- openai-whisper
@@ -168,7 +168,7 @@ One of the last outptus will give you all the instructions you need:
   http://127.0.0.1:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   Copy/paste this URL in a browser on this machine to control Clawdbot.
   No GUI detected. Open from your computer:
-  ssh -N -L 18789:127.0.0.1:18789 conio@192.168.122.225
+  ssh -N -L 18789:127.0.0.1:18789 bot@192.168.122.225
   Then open:
   http://localhost:18789/
   http://localhost:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -187,7 +187,7 @@ netsta -tnap | grep 18789
 run the SSL command **on your host**:
 
 ``` bash
-ssh -N -L 18789:127.0.0.1:18789 conio@192.168.122.225
+ssh -N -L 18789:127.0.0.1:18789 bot@192.168.122.225
 ```
 
 then point your browser to

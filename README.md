@@ -74,10 +74,12 @@ Now save and become the **bot** user
 
 ### Install homebrew (Linuxbrew)
 
+Homebrew/Linuxbrew is required to install skills etc. Although the installation scripts shows you how to install it later, it makes sense to install it before so to have more control on the installation issues etc.
+
 As the **bot** user:
 
 ``` bash
-## Run install script
+## Run install script, press ENTER when prompted, wait for termination, it takes a while
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ## permanently add brew to path
@@ -143,19 +145,20 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
 Quick answers for a basic install
-- yes
-- quickstart
+- Yes
+- Quickstart
 - Google --> Google Gemini Api Key
 - Pick model `google/gemini-2-5-flash-lite`
 - define a channel: pick `Telegram`
 	- when asked inser the Telegram Bot API key
+- Configure Skills now: yes
 - preferred node package manager for skills: `npm`
-- pick the skills you like from the lost, example
-	- himalaya
-	- model-usage
-	- openai-whisper
-	- sag
-	- summarize
+- pick the skills you like from the lost (space to select, return to confirm). Example:
+	- `himalaya`
+	- `model-usage`
+	- `openai-whisper`
+	- `sag`
+	- `summarize`
 
 
 ### 4) Connect to the gateway
@@ -176,6 +179,8 @@ One of the last outptus will give you all the instructions you need:
   https://docs.clawd.bot/gateway/remote
   https://docs.clawd.bot/web/control-ui
 ```
+> **NOTE**
+> Save this screenshot somewere as you'll **need** it later
 
 Check if gateway is there
 
@@ -215,11 +220,21 @@ openclaw pairing approve telegram <code>
 
 You can pass those values in the gateway chat and have openclaw set all for you.
 
-## Installation tricks
+## Maintenance
 
+**Restart**
+Redo the configuration from the start
 ``` bash
-### Redo the configuration from the start
 openclaw onboard
+```
+
+**Security**:
+https://docs.openclaw.ai/gateway/security
+Run periodic security audit (set a cron-job?)
+``` bash
+openclaw security audit --deep
+openclaw security audit --fix
+
 ```
 
 

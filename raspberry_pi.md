@@ -151,7 +151,7 @@ Creating the Telegram bot account now allow for a cleaner approach later.
 
 - *Optional*: create a profile picture for your bot and add it:
 	- in BotFather pick /mybots
-	- edit --> edit botpic --> upload imge
+	- edit --> edit botpic --> upload image
 
 
 ### 2) Get the Google Gemini Api Key 

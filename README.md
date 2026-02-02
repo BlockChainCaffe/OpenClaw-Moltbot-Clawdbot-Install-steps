@@ -224,8 +224,39 @@ Pairing code: XXXXXXXX
 Ask the bot owner to approve with:
 openclaw pairing approve telegram <code>
 ```
+You have two options now:
 
-You can pass those values in the gateway chat and have openclaw set all for you.
+1) issue a command in the terminal as stated in the message
+``` bash
+openclaw pairing approve telegram XXXXXXXX
+```
+
+2) let the bot figure it out by itself (awesome!!): just chat with the bot, pass it the Telegram user id and pairing code, it'll do the rest. If does not work try option #1
+done
+
+## Troubleshooting
+
+**openclaw command not found**
+
+openclaw is installed via npm so...
+
+``` bash
+## get global npm folder
+npm prefix -g
+> /home/bot/.npm-global
+
+## see openclaw command file is there
+ls -al /home/conio/.npm-global/bin
+> lrwxrwxrwx 1 bot bot   41 Feb  1 14:54 openclaw -> ../lib/node_modules/openclaw/openclaw.mjs
+
+## add it to path
+echo 'PATH="$(npm prefix -g)/bin:$PATH"' >> ~/.profile
+source ~/.profile
+echo $PATH
+
+## Test
+openclaw --version
+```
 
 ## Maintenance
 
@@ -234,7 +265,7 @@ You can pass those values in the gateway chat and have openclaw set all for you.
 openclaw dashboard --no-open
 ```
 
-**Redo from start **
+**Redo from start**
 Redo the configuration from the start
 ``` bash
 openclaw onboard

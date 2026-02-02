@@ -194,25 +194,30 @@ Quick answers for a basic install
 	- `openai-whisper`
 	- `sag`
 	- `summarize`
+- beware of possible installation errors for the skills
+- next some more API keys could be asked
+  - if you don't have them, don't want them feel free to reply No 
+- (Optional) once skills are installed (it takes a while) run
+``` bash
+openclaw doctor
+```
 
 One of the last outptus will give you all the instructions you need:
 
 ```
-◇  Dashboard ready
-  Dashboard link (with token):
-  http://127.0.0.1:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  Copy/paste this URL in a browser on this machine to control Clawdbot.
-  No GUI detected. Open from your computer:
-  ssh -N -L 18789:127.0.0.1:18789 bot@192.168.122.225
-  Then open:
-  http://localhost:18789/
-  http://localhost:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  Docs:
-  https://docs.clawd.bot/gateway/remote
-  https://docs.clawd.bot/web/control-ui
+◇  Control UI ─────────────────────────────────────────────────────────────────────╮
+│                                                                                  │
+│  Web UI: http://127.0.0.1:18789/                                                 │
+│  Web UI (with token):                                                            │
+│  http://127.0.0.1:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  │
+│  Gateway WS: ws://127.0.0.1:18789                                                │
+│  Gateway: reachable                                                              │
+│  Docs: https://docs.openclaw.ai/web/control-ui                                   │
+│                                                                                  │
+├──────────────────────────────────────────────────────────────────────────────────╯
 ```
-
-Screenshot or copy+paste those lines as we'll need them soon
+> **NOTE**
+> Save this screenshot somewere as you'll **need** it later
 
 
 ### 2) Get to the web gateway

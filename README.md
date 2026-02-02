@@ -106,7 +106,7 @@ openclaw is a security nightmare so:
 
 ----
 
-## Bot nstallation steps
+## Bot Installation steps
 
 ### 1) Create Telegram bot
 - chat with https://t.me/BotFather

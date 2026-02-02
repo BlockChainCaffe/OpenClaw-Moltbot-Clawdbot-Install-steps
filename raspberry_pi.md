@@ -104,7 +104,7 @@ apt-get install -y git vim
 ```
 
 ### Install homebrew (Linuxbrew)
-
+Homebrew/Linuxbrew is required to install skills etc. Although the installation scripts shows you how to install it later, it makes sense to install it before so to have more control on the installation issues etc.
 As the **bot** user:
 
 ``` bash

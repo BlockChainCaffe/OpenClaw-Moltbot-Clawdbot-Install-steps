@@ -180,19 +180,20 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
 Quick answers for a basic install
-- yes
-- quickstart
+- Yes
+- Quickstart
 - Google --> Google Gemini Api Key
 - Pick model `google/gemini-2-5-flash-lite`
 - define a channel: pick `Telegram`
 	- when asked inser the Telegram Bot API key
+- Configure Skills now: yes
 - preferred node package manager for skills: `npm`
-- pick the skills you like from the lost, example
-	- himalaya
-	- model-usage
-	- openai-whisper
-	- sag
-	- summarize
+- pick the skills you like from the lost (space to select, return to confirm). Example:
+	- `himalaya`
+	- `model-usage`
+	- `openai-whisper`
+	- `sag`
+	- `summarize`
 
 One of the last outptus will give you all the instructions you need:
 

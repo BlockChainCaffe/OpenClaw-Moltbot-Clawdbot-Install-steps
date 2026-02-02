@@ -159,28 +159,33 @@ Quick answers for a basic install
 	- `openai-whisper`
 	- `sag`
 	- `summarize`
-
-
-### 4) Connect to the gateway
-
-One of the last outptus will give you all the instructions you need:
-
+- beware of possible installation errors for the skills
+- next some more API keys could be asked
+  - if you don't have them, don't want them feel free to reply No 
+- (Optional) once skills are installed (it takes a while) run
+``` bash
+openclaw doctor
 ```
-◇  Dashboard ready
-  Dashboard link (with token):
-  http://127.0.0.1:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  Copy/paste this URL in a browser on this machine to control Clawdbot.
-  No GUI detected. Open from your computer:
-  ssh -N -L 18789:127.0.0.1:18789 bot@192.168.122.225
-  Then open:
-  http://localhost:18789/
-  http://localhost:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  Docs:
-  https://docs.clawd.bot/gateway/remote
-  https://docs.clawd.bot/web/control-ui
+- at the end of the installation you'll be shown your access to **Control UI**
+  - **note down	those access links and token**
 ```
-> **NOTE**
-> Save this screenshot somewere as you'll **need** it later
+◇  Control UI ─────────────────────────────────────────────────────────────────────╮
+│                                                                                  │
+│  Web UI: http://127.0.0.1:18789/                                                 │
+│  Web UI (with token):                                                            │
+│  http://127.0.0.1:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  │
+│  Gateway WS: ws://127.0.0.1:18789                                                │
+│  Gateway: reachable                                                              │
+│  Docs: https://docs.openclaw.ai/web/control-ui                                   │
+│                                                                                  │
+├──────────────────────────────────────────────────────────────────────────────────╯
+```
+- last question: Hatch in TUI
+
+At this point **the installation is complete**. You can now chat with your Ai assistan already.
+Next you'll probably want to interact via web interface and telegram
+
+### 4) Connect to the gateway via web interface
 
 Check if gateway is there
 
@@ -188,14 +193,16 @@ Check if gateway is there
 netsta -tnap | grep 18789
 ```
 
-
-run the SSL command **on your host**:
+The web UI listens on port 18789 on **localhost**. Unless you are installing Openclaw on your main computer **which is not recommended** you need a way to connect your browser to that port.
+The best way to connect to the web UI is via **ssh port forwarding**
+Run this SSL command **on your host**:
 
 ``` bash
 ssh -N -L 18789:127.0.0.1:18789 bot@192.168.122.225
 ```
+This will create a stable SSH connection between the port 18789 of your host to the same port on the bot's server.
 
-then point your browser to
+Now point your browser to
 
 ```
 http://localhost:18789/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -222,7 +229,12 @@ You can pass those values in the gateway chat and have openclaw set all for you.
 
 ## Maintenance
 
-**Restart**
+**Get access token**
+``` bash
+openclaw dashboard --no-open
+```
+
+**Redo from start **
 Redo the configuration from the start
 ``` bash
 openclaw onboard

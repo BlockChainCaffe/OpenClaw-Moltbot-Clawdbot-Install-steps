@@ -100,8 +100,10 @@ ssh bot@<raspberry_IP_address>
 
 First lets add some packages that we'll need later on
 ``` bash
-apt-get install -y git vim 
+apt-get install -y git vim btop net-tools
 ```
+-  feel free to install other software you like
+-  edit your `.bashrc` file to enable some aliases to ease your work
 
 ### Install homebrew (Linuxbrew)
 Homebrew/Linuxbrew is required to install skills etc. Although the installation scripts shows you how to install it later, it makes sense to install it before so to have more control on the installation issues etc.
@@ -166,7 +168,7 @@ Beware of considering API usage costs too.
 
 ----
 
-## Bot installation
+## OpenClaw installation
 
 ### 1) Bot onboarding script
 

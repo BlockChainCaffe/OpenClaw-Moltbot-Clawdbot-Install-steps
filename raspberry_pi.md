@@ -2,7 +2,7 @@
 
 
 ## OS install
-
+ 
 ### First boot
 - Downdload the SD-card image [from this page](https://www.raspberrypi.com/software/operating-systems/)
   - the **Raspberry Pi OS Lite** with no desktop environment is probably the best
